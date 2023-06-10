@@ -1,13 +1,11 @@
 import React from 'react';
 import Cards from '../../Components/Cards/index';
-import useOnline from '../../Internals/useOnline';
+import AddBanners from '../../Components/AdBanners/AddBanners';
 
 const Index = () => {
-  const [isOnline] = useOnline();
-
-  if(!isOnline) return "Why Offline baby  ? "
   return (
     <>
+      <AddBanners />
       <Cards />
     </>
   );

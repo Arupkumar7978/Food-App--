@@ -6,7 +6,8 @@ import { FaFilter } from 'react-icons/fa';
 import { AiFillStar } from 'react-icons/ai';
 import { IoFastFoodSharp } from 'react-icons/io5';
 import { GiFoodChain } from 'react-icons/gi';
-import foodDarwaar from '../../Food Darwaar.svg';
+import { FiSearch } from 'react-icons/fi';
+import { MdLocationOn } from 'react-icons/md';
 
 const Navbar = () => {
   return (
@@ -15,7 +16,7 @@ const Navbar = () => {
         <div className="app-logo-section">
           <div className="app-name-section">
             <span className="app-logo">
-              <SiIfood style={{marginTop:'0.4rem'}}/>
+              <SiIfood style={{ marginTop: '0.4rem' }} />
             </span>
             <Typography variant="h5" className="app-name">
               Hunger
@@ -28,12 +29,16 @@ const Navbar = () => {
           </span>
         </div>
       </div>
-
+      <div className="search-box-section">
+        <span className="user-city">
+          <MdLocationOn className="location-icon" />
+          Bhubaneswar
+        </span>
+        <span className="search-circle">
+          <FiSearch className="user-icon" />
+        </span>
+      </div>
       <div className="overflow-list">
-        <div className="common-filters-list">
-          <FaFilter className="item-list-icon" />
-          <span>Filter</span>
-        </div>
         <div className="common-filters-list">
           <AiFillStar className="item-list-icon" />
           <span>Rating: 4.0+</span>

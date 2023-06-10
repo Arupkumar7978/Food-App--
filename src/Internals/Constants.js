@@ -8,3 +8,9 @@ export const IMG_CDN_URL =
 
 export const RESTAURANTS_URL =
   'https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.4698577&lng=78.3578246&page_type=DESKTOP_WEB_LISTING';
+
+
+  const map = new Map()
+map.set(1,{name:'Naan',quantity:1,price:500})
+
+console.log(map);

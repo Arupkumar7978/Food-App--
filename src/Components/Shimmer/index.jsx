@@ -11,7 +11,7 @@ const CardShimmer = () => {
           flexWrap: 'wrap',
           justifyContent: 'center',
           gap: '25px',
-          marginTop: '3.5rem',
+          marginTop: '2rem',
         }}
       >
         {Array.from(new Array(20).fill('')).map((item, index) => (
